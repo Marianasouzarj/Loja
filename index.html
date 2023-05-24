@@ -12,6 +12,10 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="js/funcoes.js"></script>
+
+    
+
 </head>
 <body>
 
@@ -40,13 +44,13 @@
                     <div><span class="produto-item">Código:</span>123456</div>
                     <div><span class="produto-item">Cor: </span>Preto</div>                    
                 </td>
-                <td>R$ 1000,00</td>
+                <td id="valor_1">R$ 1.000</td>
                 <td>
-                    <span class="badge bg-danger"> <i class="bi bi-dash"></i> </span>
-                    0
-                    <span class="badge bg-success"> <i class="bi bi-plus"></i> </span>
+                    <span class="badge bg-danger" onclick="alterarQtd(1, '-')"> <i class="bi bi-dash"></i> </span>
+                    <span id="qtd_1">0</span>
+                    <span class="badge bg-success" onclick="alterarQtd(1, '+')"> <i class="bi bi-plus"></i> </span>
                 </td>
-                <td>0</td>
+                <td id="total_1">0</td>
             </tr>
             <tr>
                 <td>
@@ -57,13 +61,13 @@
                     <div><span class="produto-item">Código:</span>789895</div>
                     <div><span class="produto-item">Cor: </span>Prata</div>                    
                 </td>
-                <td>R$ 2000,00</td>
+                <td id="valor_2">R$ 2.000</td>
                 <td>
-                    <span class="badge bg-danger"> <i class="bi bi-dash"></i> </span>
-                    0
-                    <span class="badge bg-success"> <i class="bi bi-plus"></i> </span>
+                    <span class="badge bg-danger" onclick="alterarQtd(2, '-')"> <i class="bi bi-dash"></i> </span>
+                    <span id="qtd_2">0</span>
+                    <span class="badge bg-success" onclick="alterarQtd(2, '+')"> <i class="bi bi-plus"></i> </span>
                 </td>
-                <td>0</td>
+                <td id="total_2">0</td>
             </tr>
             <tr>
                 <td>
@@ -74,19 +78,19 @@
                     <div><span class="produto-item">Código:</span>154875</div>
                     <div><span class="produto-item">Cor: </span>Preto</div>                    
                 </td>
-                <td>R$ 3000,00</td>
+                <td id="valor_3">R$ 3.000</td>
                 <td>
-                    <span class="badge bg-danger"> <i class="bi bi-dash"></i> </span>
-                    0
-                    <span class="badge bg-success"> <i class="bi bi-plus"></i> </span>
+                    <span class="badge bg-danger" onclick="alterarQtd(3, '-')"> <i class="bi bi-dash"></i> </span>
+                    <span id="qtd_3">0</span>
+                    <span class="badge bg-success" onclick="alterarQtd(3, '+')"> <i class="bi bi-plus"></i> </span>
                 </td>
-                <td>0</td>
+                <td id="total_3">0</td>
             </tr>
             
         </tbody>
     </table>
     <footer class="text-center">
-        <span><i class="bi bi-cart-check"></i> Subtotal: R$ 0</span>
+        <span><i class="bi bi-cart-check"></i> Subtotal: <span id="subtotal">R$ 0</span></span>
     </footer>
 
 </div>
